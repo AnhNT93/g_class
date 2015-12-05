@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  def home
+   def home
   end
   def transforms2d
   end
@@ -48,4 +48,5 @@ class StaticPagesController < ApplicationController
   def user_interface
     
   end
+
 end

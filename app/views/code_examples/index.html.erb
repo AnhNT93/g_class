@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Code Examples</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @code_examples.each do |code_example| %>
+      <tr>
+        <td><%= code_example.name %></td>
+        <td><%#= raw(code_example.content) %></td>
+        <td><%= link_to 'Show', code_example %></td>
+        <td><%= link_to 'Edit', edit_code_example_path(code_example) %></td>
+        <td><%= link_to 'Destroy', code_example, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Code example', new_code_example_path %>

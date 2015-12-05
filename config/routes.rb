@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :code_examples
 #  get 'users/show'
 
   get 'friends/create'
@@ -26,6 +27,7 @@ Rails.application.routes.draw do
   get 'static_pages/text'
   get 'static_pages/transitions'
   get 'static_pages/user_interface'
+  get 'static_pages/demo_test'
   devise_for :users
   resources :users, only: [:show, :index]
   resources :friends, only: [:create,:destroy,:update]
