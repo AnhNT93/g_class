@@ -12,8 +12,16 @@
   <div class="row">
     <%= render ('layouts/side_bar')%>
     <div class="col-md-10">
-    <%= render ('layouts/slide_show') %>
+          <%= render ('layouts/slide_show') %>
+    <div class="thumbnail">
+      <div class="caption">
+
+    <% flash.each do |message_type, message| %>
+      <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+    <% end %>
     <%= yield %>
+    </div>
+    </div>
     </div>
     
   <div>

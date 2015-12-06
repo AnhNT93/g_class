@@ -636,3 +636,176 @@ code_examples:
       property.</p>\r\n\r\n</body>\r\n</html>"
     - '2015-12-05 15:42:11.533581'
     - '2015-12-05 16:36:51.488276'
+  - - 7
+    - CSS3 Multiple Backgrounds
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#example1 {\r\n    background-image:
+      url(http://i.imgur.com/gAQrJ7K.gif), url(http://i.imgur.com/emFRAGg.gif);\r\n
+      \   background-position: right bottom, left top;\r\n    background-repeat: no-repeat,
+      repeat;\r\n    padding: 15px;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div
+      id=\"example1\">\r\n<h1>Lorem Ipsum Dolor</h1>\r\n<p>Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>\r\n<p>Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+      ea commodo consequat.</p>\r\n</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:13:28.639551'
+    - '2015-12-06 13:14:55.671618'
+  - - 8
+    - CSS3 Multiple Backgrounds 2
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#example1 {\r\n    background:
+      url(http://i.imgur.com/gAQrJ7K.gif) right bottom no-repeat, url(http://i.imgur.com/emFRAGg.gif)
+      left top repeat;\r\n    padding: 15px;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div
+      id=\"example1\">\r\n<h1>Lorem Ipsum Dolor</h1>\r\n<p>Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>\r\n<p>Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+      ea commodo consequat.</p>\r\n</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:16:35.531413'
+    - '2015-12-06 13:16:35.531413'
+  - - 9
+    - CSS3 Background Size
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#example1 {\r\n    border:
+      1px solid black;\r\n    background:url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-repeat: no-repeat;\r\n    padding:15px;\r\n}\r\n\r\n#example2
+      {\r\n    border: 1px solid black;\r\n    background:url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-size: 100px 80px;\r\n    background-repeat: no-repeat;\r\n    padding:15px;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>Original
+      background-image:</p>\r\n<div id=\"example1\">\r\n<h2>Lorem Ipsum Dolor</h2>\r\n<p>Lorem
+      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+      tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>\r\n<p>Ut wisi enim
+      ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat.</p>\r\n</div>\r\n\r\n<p>Resized background-image:</p>\r\n<div
+      id=\"example2\">\r\n<h2>Lorem Ipsum Dolor</h2>\r\n<p>Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>\r\n<p>Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+      ea commodo consequat.</p>\r\n</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:17:49.664183'
+    - '2015-12-06 13:17:49.664183'
+  - - 10
+    - CSS3 Background Size
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n.div1 {\r\n    border: 1px
+      solid black;\r\n    height:150px;\r\n    width:180px;\r\n    background:url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-repeat: no-repeat;\r\n}\r\n\r\n.div2 {\r\n    border: 1px solid
+      black;\r\n    height:150px;\r\n    width:180px;\r\n    background:url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-repeat: no-repeat;\r\n    background-size: contain;\r\n}\r\n\r\n.div3
+      {\r\n    border: 1px solid black;\r\n    height:150px;\r\n    width:180px;\r\n
+      \   background:url(img_flwr.gif);\r\n    background-repeat: no-repeat;\r\n    background-size:
+      cover;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>Original image:</p>\r\n<div
+      class=\"div1\">\r\n<p>Lorem ipsum dolor sit amet.</p>\r\n</div>\r\n\r\n<p>Using
+      the \"contain\" keyword:</p>\r\n<div class=\"div2\">\r\n<p>Lorem ipsum dolor
+      sit amet.</p>\r\n</div>\r\n\r\n<p>Using the \"cover\" keyword:</p>\r\n<div class=\"div3\">\r\n<p>Lorem
+      ipsum dolor sit amet.</p>\r\n</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:18:34.764359'
+    - '2015-12-06 13:18:34.764359'
+  - - 11
+    - Define Sizes of Multiple Background Images
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#example1 {\r\n    background:
+      url(http://i.imgur.com/gAQrJ7K.gif) left top no-repeat, url(http://i.imgur.com/gAQrJ7K.gif)
+      right bottom no-repeat, url(http://i.imgur.com/emFRAGg.gif) left top repeat;\r\n
+      \   padding: 15px;\r\n    background-size: 50px, 130px, auto;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div
+      id=\"example1\">\r\n<h1>Lorem Ipsum Dolor</h1>\r\n<p>Lorem ipsum dolor sit amet,
+      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+      dolore magna aliquam erat volutpat.</p>\r\n<p>Ut wisi enim ad minim veniam,
+      quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+      ea commodo consequat.</p>\r\n</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:19:48.061172'
+    - '2015-12-06 13:19:48.061172'
+  - - 12
+    - Full Size Background Image
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\nhtml { \r\n  background:
+      url(http://i.imgur.com/72mPy68.jpg) no-repeat center center fixed; \r\n  background-size:
+      cover;\r\n}\r\n\r\nbody { \r\n  color: white; \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<h1>Full
+      Page Background Image</h1>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+      elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+      erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+      suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:20:52.274194'
+    - '2015-12-06 13:20:52.274194'
+  - - 13
+    - CSS3 background-origin Property
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#example1 {\r\n    border:
+      10px solid black;\r\n    padding: 35px;\r\n    background: url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-repeat: no-repeat;\r\n}\r\n\r\n#example2 {\r\n    border: 10px
+      solid black;\r\n    padding: 35px;\r\n    background: url(img_flwr.gif);\r\n
+      \   background-repeat: no-repeat;\r\n    background-origin: border-box;\r\n}\r\n\r\n#example3
+      {\r\n    border: 10px solid black;\r\n    padding: 35px;\r\n    background:
+      url(http://i.imgur.com/gAQrJ7K.gif);\r\n    background-repeat: no-repeat;\r\n
+      \   background-origin: content-box;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>No
+      background-origin (padding-box is default):</p>\r\n<div id=\"example1\">\r\n<h2>Lorem
+      Ipsum Dolor</h2>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+      volutpat.</p>\r\n<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation
+      ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>\r\n</div>\r\n\r\n<p>background-origin:
+      border-box:</p>\r\n<div id=\"example2\">\r\n<h2>Lorem Ipsum Dolor</h2>\r\n<p>Lorem
+      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+      tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>\r\n<p>Ut wisi enim
+      ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat.</p>\r\n</div>\r\n\r\n<p>background-origin:
+      content-box:</p>\r\n<div id=\"example3\">\r\n<h2>Lorem Ipsum Dolor</h2>\r\n<p>Lorem
+      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+      tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>\r\n<p>Ut wisi enim
+      ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+      ut aliquip ex ea commodo consequat.</p>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 13:21:48.259985'
+    - '2015-12-06 13:22:09.134425'
+  - - 14
+    - CSS3 background-clip Property
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#example1 {\r\n    border:
+      10px dotted black;\r\n    padding:35px;\r\n    background: yellow;\r\n}\r\n\r\n#example2
+      {\r\n    border: 10px dotted black;\r\n    padding:35px;\r\n    background:
+      yellow;\r\n    background-clip: padding-box;\r\n}\r\n\r\n#example3 {\r\n    border:
+      10px dotted black;\r\n    padding:35px;\r\n    background: yellow;\r\n    background-clip:
+      content-box;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>No background-clip
+      (border-box is default):</p>\r\n<div id=\"example1\">\r\n<h2>Lorem Ipsum Dolor</h2>\r\n<p>Lorem
+      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+      tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>\r\n</div>\r\n\r\n<p>background-clip:
+      padding-box:</p>\r\n<div id=\"example2\">\r\n<h2>Lorem Ipsum Dolor</h2>\r\n<p>Lorem
+      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+      tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>\r\n</div>\r\n\r\n<p>background-clip:
+      content-box:</p>\r\n<div id=\"example3\">\r\n<h2>Lorem Ipsum Dolor</h2>\r\n<p>Lorem
+      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+      tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>\r\n</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:22:40.525020'
+    - '2015-12-06 13:22:40.525020'
+  - - 15
+    - RGBA Colors
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#p1 {background-color:rgba(255,0,0,0.3);}\r\n#p2
+      {background-color:rgba(0,255,0,0.3);}\r\n#p3 {background-color:rgba(0,0,255,0.3);}\r\n#p4
+      {background-color:rgba(192,192,192,0.3);}\r\n#p5 {background-color:rgba(255,255,0,0.3);}\r\n#p6
+      {background-color:rgba(255,0,255,0.3);}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>RGBA
+      colors:</p>\r\n<p id=\"p1\">Red</p>\r\n<p id=\"p2\">Green</p>\r\n<p id=\"p3\">Blue</p>\r\n<p
+      id=\"p4\">Grey</p>\r\n<p id=\"p5\">Yellow</p>\r\n<p id=\"p6\">Cerise</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 13:27:08.985946'
+    - '2015-12-06 13:27:08.985946'
+  - - 16
+    - HSL Colors
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#p1 {background-color:hsl(120,100%,50%);}\r\n#p2
+      {background-color:hsl(120,100%,75%);}\r\n#p3 {background-color:hsl(120,100%,25%);}\r\n#p4
+      {background-color:hsl(120,60%,70%);}\r\n#p5 {background-color:hsl(290,100%,50%);}\r\n#p6
+      {background-color:hsl(290,60%,70%);}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>HSL
+      colors:</p>\r\n<p id=\"p1\">Green</p>\r\n<p id=\"p2\">Light green</p>\r\n<p
+      id=\"p3\">Dark green</p>\r\n<p id=\"p4\">Pastel green</p>\r\n<p id=\"p5\">Violet</p>\r\n<p
+      id=\"p6\">Pastel violet</p>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 13:27:48.464377'
+    - '2015-12-06 13:27:48.464377'
+  - - 17
+    - HSLA Colors
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#p1 {background-color:hsla(120,100%,50%,0.3);}\r\n#p2
+      {background-color:hsla(120,100%,75%,0.3);}\r\n#p3 {background-color:hsla(120,100%,25%,0.3);}\r\n#p4
+      {background-color:hsla(120,60%,70%,0.3);}\r\n#p5 {background-color:hsla(290,100%,50%,0.3);}\r\n#p6
+      {background-color:hsla(290,60%,70%,0.3);}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>HSLA
+      colors:</p>\r\n<p id=\"p1\">Green</p>\r\n<p id=\"p2\">Light green</p>\r\n<p
+      id=\"p3\">Dark green</p>\r\n<p id=\"p4\">Pastel green</p>\r\n<p id=\"p5\">Violet</p>\r\n<p
+      id=\"p6\">Pastel violet</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 13:28:59.522148'
+    - '2015-12-06 13:28:59.522148'
+  - - 18
+    - Opacity
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#p1 {background-color:rgb(255,0,0);opacity:0.6;}\r\n#p2
+      {background-color:rgb(0,255,0);opacity:0.6;}\r\n#p3 {background-color:rgb(0,0,255);opacity:0.6;}\r\n#p4
+      {background-color:rgb(192,192,192);opacity:0.6;}\r\n#p5 {background-color:rgb(255,255,0);opacity:0.6;}\r\n#p6
+      {background-color:rgb(255,0,255);opacity:0.6;}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>RGB
+      colors with opacity:</p>\r\n<p id=\"p1\">Red</p>\r\n<p id=\"p2\">Green</p>\r\n<p
+      id=\"p3\">Blue</p>\r\n<p id=\"p4\">Grey</p>\r\n<p id=\"p5\">Yellow</p>\r\n<p
+      id=\"p6\">Cerise</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 13:29:28.642927'
+    - '2015-12-06 13:29:28.642927'
