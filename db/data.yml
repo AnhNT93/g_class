@@ -469,17 +469,17 @@ users:
     - 
     - 
     - 
-    - 4
-    - '2015-12-06 15:21:01.328261'
-    - '2015-11-21 03:19:55.008852'
+    - 6
+    - '2015-12-06 16:00:05.510721'
+    - '2015-12-06 15:54:12.917101'
     - 42.114.38.129
-    - 123.24.122.121
+    - 42.114.38.129
     - HZ2tM3z9yWQc4a9zThG4
     - '2015-11-07 04:17:34.323602'
     - '2015-11-07 04:16:57.503862'
     - 
     - '2015-11-07 04:16:57.246872'
-    - '2015-12-06 15:21:01.330221'
+    - '2015-12-06 16:00:05.512136'
     - anh
     - Male
     - 25
@@ -501,6 +501,26 @@ users:
     - '2015-12-06 15:25:36.877814'
     - '2015-12-06 15:25:36.877814'
     - anhnt93
+    - Male
+    - 25
+  - - 25
+    - vandt156@gmail.com
+    - "$2a$10$Neecq0aG4eRWv5GTFE.qGu.zjzKZavQ64lZUngMp5hllZEUEH3b5e"
+    - 
+    - 
+    - 
+    - 3
+    - '2015-12-06 17:07:57.074831'
+    - '2015-12-06 16:25:09.085008'
+    - 42.114.38.129
+    - 42.114.38.129
+    - nZ_bSC1StmW-xBvSZiqr
+    - '2015-12-06 15:57:15.648482'
+    - '2015-12-06 15:56:48.467451'
+    - 
+    - '2015-12-06 15:56:48.452971'
+    - '2015-12-06 17:07:57.076449'
+    - vandt156
     - Male
     - 25
 
@@ -535,6 +555,29 @@ goals:
     - '2015-12-05 07:59:00.000000'
     - '2015-12-05 07:38:25.009006'
     - '2015-12-05 07:38:25.009006'
+
+---
+friends:
+  columns:
+  - id
+  - user_id
+  - friend_id
+  - accepted
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 23
+    - 1
+    - false
+    - '2015-12-06 15:55:11.082709'
+    - '2015-12-06 15:55:11.082709'
+  - - 2
+    - 25
+    - 23
+    - true
+    - '2015-12-06 15:57:51.835528'
+    - '2015-12-06 16:00:33.364611'
 
 ---
 code_examples:
@@ -812,3 +855,130 @@ code_examples:
       id=\"p6\">Cerise</p>\r\n\r\n</body>\r\n</html>\r\n"
     - '2015-12-06 13:29:28.642927'
     - '2015-12-06 13:29:28.642927'
+
+---
+exercises:
+  columns:
+  - id
+  - question
+  - guest
+  - incorrect
+  - correct
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Give the <div> element rounded corners (use the shorthand property and the value
+      "25px").
+    - 'Hint: Use the border-radius shorthand property.'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv {\r\n    background:
+      #73AD21;\r\n    padding: 20px; \r\n    width: 200px;  \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This
+      is a div element. It has some text.</div>\r\n\r\n</body>\r\n</html>"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv {\r\n    border-radius:
+      25px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width: 200px;
+      \ \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This is a div element.
+      It has some text.</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 17:34:26.478281'
+    - '2015-12-06 17:34:26.478281'
+  - - 2
+    - Give the <div> element a rounded corner (25px radius) on the bottom left side.
+    - 'Hint: Use the border-radius shorthand, or border-bottom-left-radius, property.'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv {\r\n    background:
+      #73AD21;\r\n    padding: 20px; \r\n    width: 200px;  \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This
+      is a div element. It has some text.</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv {\r\n    border-bottom-left-radius:
+      25px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width: 200px;
+      \ \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This is a div element.
+      It has some text.</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 22:27:05.921047'
+    - '2015-12-06 22:27:05.921047'
+  - - 3
+    - Give the <div> element an image border using the image "http://i.imgur.com/Lw8U58y.png".
+      Slice the image at 30px and repeat it.
+    - 'Hint: Use the border-image shorthand property, like this border-image: source
+      slice round;'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv {\r\n\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This
+      is a div element. It has some text.</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv { \r\n    border: 10px
+      solid transparent;\r\n    border-image: url(http://i.imgur.com/Lw8U58y.png)
+      30 round;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This is a div element.
+      It has some text.</div>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-06 22:37:06.570923'
+    - '2015-12-06 22:37:06.570923'
+  - - 4
+    - Give the <div> element an image border using the image "http://i.imgur.com/Lw8U58y.png".
+      Slice the image at 30px and stretch it.
+    - 'Hint: Use the border-image shorthand property, like this border-image: source
+      slice stretch;'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv {\r\n\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This
+      is a div element. It has some text.</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv { \r\n    border: 10px
+      solid transparent;\r\n    border-image: url(http://i.imgur.com/Lw8U58y.png)
+      30 stretch;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>This is a div
+      element. It has some text.</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 22:38:17.962955'
+    - '2015-12-06 22:38:39.432985'
+  - - 5
+    - Add a second background image ("ihttp://i.imgur.com/gAQrJ7K.gif") to the <body>
+      element. Make sure that "http://i.imgur.com/gAQrJ7K.gif" is displayed on top
+      of the current background image.
+    - 'Hint: Use the background-image property.'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\nbody {\r\n    background-image:
+      url(http://i.imgur.com/emFRAGg.gif);\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\nbody {\r\n    background-image:
+      url(http://i.imgur.com/gAQrJ7K.gif), url(http://i.imgur.com/emFRAGg.gif);\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 22:40:53.920617'
+    - '2015-12-06 22:42:37.174992'
+  - - 6
+    - 'Change the size of the background image to: width 100px, height 80px.'
+    - 'Hint: Use the background-size property.'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\nbody {\r\n    background:url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-repeat: no-repeat;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\nbody {\r\n    background:url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-size: 100px 80px;\r\n    background-repeat: no-repeat;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 22:48:35.101512'
+    - '2015-12-06 22:48:35.101512'
+  - - 7
+    - Change the size of the background image so it always fits the entire page.
+    - 'Hint: Use the background-size property.'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\nhtml { \r\n  background:
+      url(http://i.imgur.com/72mPy68.jpg) no-repeat center center fixed; \r\n}\r\n\r\nbody
+      { \r\n  color: white; \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n<h1>This is
+      a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n\r\n</body>\r\n</html>"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\nhtml { \r\n  background:
+      url(http://i.imgur.com/72mPy68.jpg) no-repeat center center fixed;\r\n  background-size:
+      cover;\r\n}\r\n\r\nbody { \r\n  color: white; \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 22:49:15.235938'
+    - '2015-12-06 22:50:35.735218'
+  - - 8
+    - Specify that the background image position should start from the upper left
+      corner of the content-box.
+    - 'Hint: Use the background-origin property.'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv { \r\n    border: 10px
+      solid black;\r\n    padding: 35px;\r\n    background: url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-repeat: no-repeat;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv { \r\n    border: 10px
+      solid black;\r\n    padding: 35px;\r\n    background: url(http://i.imgur.com/gAQrJ7K.gif);\r\n
+      \   background-repeat: no-repeat;\r\n    background-origin: content-box;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 22:51:36.150996'
+    - '2015-12-06 22:51:36.150996'
+  - - 9
+    - Specify that the "painting area" of the background should be to the outside
+      edge of the padding.
+    - 'Hint: Use the background-clip property.'
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv { \r\n    border: 10px
+      dotted black;\r\n    padding: 35px;\r\n    background: lightblue;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\ndiv { \r\n    border: 10px
+      dotted black;\r\n    padding: 35px;\r\n    background: lightblue;\r\n    background-clip:
+      padding-box;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div>\r\n<h1>This
+      is a Heading</h1>\r\n<p>This is a paragraph.</p>\r\n<p>This is another paragraph.</p>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-06 22:52:21.501523'
+    - '2015-12-06 22:52:21.501523'

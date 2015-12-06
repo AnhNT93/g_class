@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :exercises
   resources :code_examples
 #  get 'users/show'
 
