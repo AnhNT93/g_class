@@ -1,0 +1,289 @@
+
+<h4>CSS3 Colors</h4>
+<%= link_to "« Previous", static_pages_backgrounds_path, class: "a_left"%>
+<%= link_to "Next Chapter »", static_pages_gradients_path, class: "a_right"%><br><br>
+<div class="br-title"> </div>
+<br>
+<h4>CSS3 Colors</h4>
+<p>CSS supports color names, hexadecimal and RGB colors.</p>
+<p>In addition, CSS3 also introduces:</p>
+<ul>
+  <li>RGBA colors</li>
+  <li>HSL colors</li>
+  <li>HSLA colors</li>
+  <li>opacity</li>
+</ul>
+<br>
+<div class="br-title"></div>
+<h4>Browser Support</h4>
+<p>The numbers in the table specify the first browser version that fully supports CSS3 color values/property.</p>
+<div class="w3-responsive">
+  <table class="table table-bordered browserref ">
+    <tr>
+      <td class="property">
+        <span>Property</span>
+      </td>
+      <td class="bsChrome">
+      </td>
+      <td class="bsEdge">
+      </td>
+      <td class="bsSafari">
+      </td>
+      <td class="bsIE">
+      </td>
+      <td class="bsOpera">
+      </td>
+      <td class="bsFirefox">
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>RGBA, HSL, and HSLA</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.1</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>9.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>10.1</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.0</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>opacity</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.1</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>9.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>10.1</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.0</span>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="br-title"></div>
+<h4>RGBA Colors</h4>
+<p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.</p>
+<p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+<div style="background: rgba(255, 0, 0, 0.2);">rgba(255, 0, 0, 0.2);</div>
+<div style="background: rgba(255, 0, 0, 0.4);">rgba(255, 0, 0, 0.4);</div>
+<div style="background: rgba(255, 0, 0, 0.6);">rgba(255, 0, 0, 0.6);</div>
+<div style="background: rgba(255, 0, 0, 0.8);">rgba(255, 0, 0, 0.8);</div>
+<p>The following example defines different RGBA colors:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#p1 </span>
+    {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> rgba(255, 0, 0, 0.3);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* red with opacity */</span>
+    <br>
+    #p2 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> rgba(0, 255, 0, 0.3);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* green with opacity */</span>
+    <br>
+    #p3 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> rgba(0, 0, 255, 0.3);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* blue with opacity */</span>
+    </span>
+    </span>
+    </span>
+  </div>
+    <%= link_to "Try it yourself »", code_example_path('15'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<div class="br-title"></div>
+<h4>HSL Colors</h4>
+<p>HSL stands for Hue, Saturation and Lightness.</p>
+<p>An HSL color value is specified with: hsl(hue, saturation, lightness).</p>
+<ol>
+  <li>
+    Hue is a degree on the color wheel (from 0 to 360):
+    <ul>
+      <li>0 (or 360) is red</li>
+      <li>120 is green</li>
+      <li>240 is blue</li>
+    </ul>
+  </li>
+  <li>Saturation is a percentage value: 100% is the full color.</li>
+  <li>Lightness is also a percentage; 0% is dark (black) and 100% is white.</li>
+</ol>
+<div style="background: hsl(0, 100%, 30%);">hsl(0, 100%, 30%);</div>
+<div style="background: hsl(0, 100%, 50%);">hsl(0, 100%, 50%);</div>
+<div style="background: hsl(0, 100%, 70%);">hsl(0, 100%, 70%);</div>
+<div style="background: hsl(0, 100%, 90%);">hsl(0, 100%, 90%);</div>
+<br>
+<p>The following example defines different HSL colors:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#p1 </span>
+    {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsl(120, 100%, 50%);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* green */</span>
+    <br>
+    #p2 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsl(120, 100%, 75%);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* light green */</span>
+    <br>
+    #p3 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsl(120, 100%, 25%);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* dark green */</span>
+    <br>
+    #p4 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsl(120, 60%, 70%);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* pastel green */</span>
+    </span>
+    </span>
+    </span>
+    </span>
+  </div>
+    <%= link_to "Try it yourself »", code_example_path('16'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<div class="br-title"></div>
+<h4>HSLA Colors</h4>
+<p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.</p>
+<p>An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+<div style="background: hsla(0, 100%, 30%, 0.3);">hsla(0, 100%, 30%, 0.3);</div>
+<div style="background: hsla(0, 100%, 50%, 0.3);">hsla(0, 100%, 50%, 0.3);</div>
+<div style="background: hsla(0, 100%, 70%, 0.3);">hsla(0, 100%, 70%, 0.3);</div>
+<div style="background: hsla(0, 100%, 90%, 0.3);">hsla(0, 100%, 90%, 0.3);</div>
+<br>
+<p>The following example defines different HSLA colors:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#p1 </span>
+    {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsla(120, 100%, 50%, 0.3);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* green with opacity */</span>
+    <br>
+    #p2 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsla(120, 100%, 75%, 0.3);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* light green with opacity */</span>
+    <br>
+    #p3 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsla(120, 100%, 25%, 0.3);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* dark green with opacity */</span>
+    <br>
+    #p4 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL"> hsla(120, 60%, 70%, 0.3);</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* pastel green with opacity */</span>
+    </span>
+    </span>
+    </span>
+    </span>
+  </div>
+    <%= link_to "Try it yourself »", code_example_path('17'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<div class="br-title"></div>
+<h4>Opacity</h4>
+<p>The CSS3 opacity property sets the opacity for a specified RGB value.</p>
+<p>The opacity property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+<div style="background:rgb(255, 0, 0);opacity:0.2;">rgb(255, 0, 0);opacity:0.2;</div>
+<div style="background:rgb(255, 0, 0);opacity:0.4;">rgb(255, 0, 0);opacity:0.4;</div>
+<div style="background:rgb(255, 0, 0);opacity:0.6;">rgb(255, 0, 0);opacity:0.6;</div>
+<div style="background:rgb(255, 0, 0);opacity:0.8;">rgb(255, 0, 0);opacity:0.8;</div>
+<br>
+<p>Notice that the text above will also be opaque.</p>
+<p>The following example shows different RGB values with opacity:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#p1 </span>
+    {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL">rgb(255,0,0);</span>
+    <span class="highATT">opacity:</span>
+    <span class="highVAL">0.6;</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* red with opacity */</span>
+    <br>
+    #p2 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL">rgb(0,255,0);</span>
+    <span class="highATT">opacity:</span>
+    <span class="highVAL">0.6;</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* green with opacity */</span>
+    <br>
+    #p3 {
+    <span class="highATT">background-color:</span>
+    <span class="highVAL">rgb(0,0,255);</span>
+    <span class="highATT">opacity:</span>
+    <span class="highVAL">0.6;</span>
+    }
+    <span class="highELE">
+    <span class="highCOM">/* blue with opacity */</span>
+    </span>
+    </span>
+    </span>
+  </div>
+    <%= link_to "Try it yourself »", code_example_path('18'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<h4>Test Yourself with Exercises!</h4>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 1 »</a>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 2 »</a>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 3 »</a>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 4 »</a>
+<br>
+<div class="br-title"></div>
+<%= link_to "« Previous", static_pages_backgrounds_path, class: "a_left"%>
+<%= link_to "Next Chapter »", static_pages_gradients_path, class: "a_right"%><br></div>
