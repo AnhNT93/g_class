@@ -33,7 +33,7 @@ body {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: #eee -moz-use-text-color -moz-use-text-color;
+    border: #968D8D solid 1px;
     border-image: none;
     border-style: solid none none;
     border-width: 1px 0 0;
@@ -73,6 +73,7 @@ body {
 }
 .w3-margin-bottom {
     margin-bottom: 16px !important;
+    margin-right: 20px !important;
 }
 .w3-btn{
     background-color: #000;
@@ -149,9 +150,10 @@ a:hover{
 }
 .team-name{
     font-family: SCBoldItalic;
-    font-size: 26px;
+    color: #00B289;
+    font-size: 32px;
     margin-left: 34px !important;
-    
+    clear: left;
 }
 a.list-group-item{
     font-size: 16px;
@@ -170,6 +172,269 @@ a:hover{
     text-align: center;
     background-color: #f5f5f5;
 }
-input.form-control{
-    width: 300px;
+/*new*/
+.a_left{
+    float: left;
+    font-size: 17px;
+}
+.a_left:hover{
+    text-decoration: none;
+}
+.a_right{
+    float: right;
+    font-size: 17px;
+}
+.a_right:hover{
+    text-decoration: none;
+}
+/*Rounded_Corners*/
+.rounded_corners{
+    border: 3px solid #FC0707;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 25px;
+}
+.rounded_corners span{
+    color: #1D05FC;
+}
+.w3-responsive img{
+    width: 31px;
+}
+.browserref{
+    width: 100%;
+}
+.browserref tr td {
+    background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-weight: normal;
+    height: 32px;
+    padding: 11px 5px;
+    vertical-align: middle;
+
+}
+.property{
+    font-size: 16px;
+    text-align: left;
+    width: 22%;
+}
+.bsChrome{
+    background-image: url(image_path("icon/compatible_chrome.gif"));
+    width: 13%;
+}
+.bsEdge{
+    background-image: url(image_path("icon/compatible_edge.gif"));
+    width: 13%;
+}
+.bsSafari{
+    background-image: url(image_path("icon/compatible_safari.gif"));
+    width: 13%;
+}
+.bsIE{
+    background-image: url(image_path("icon/compatible_ie.gif"));
+    width: 13%;
+}
+.bsOpera{
+    background-image: url(image_path("icon/compatible_opera.gif"));
+    width: 13%;
+}
+.bsFirefox{
+    background-image: url(image_path("icon/compatible_firefox.gif"));
+    width: 13%;
+}
+.browserref span{
+    font-size: 12px;
+    font-weight: bold;
+}
+.w3-reference-color{
+    background-color: #A8A8F4 !important;
+}
+#rcorners1{
+    background: red none repeat scroll 0 0;
+    border-radius: 25px;
+    height: 150px;
+    padding: 20px;
+    width: 200px;
+}
+#rcorners2{
+    border: 2px solid red;
+    border-radius: 25px;
+    height: 150px;
+    padding: 20px;
+    width: 200px;
+}
+#rcorners3{
+    background: rgba(0, 0, 0, 0) url(image_path("images.jpg")) repeat scroll left top;
+    border-radius: 25px;
+    height: 150px;
+    padding: 20px;
+    width: 200px;
+}
+.lamp .lamp_td{
+    width: 34px;
+    padding-top: 20px;
+}
+.lamp .lamp_td img{
+    height: 32px;
+    width: 32px;
+}
+.lamp span{
+    color: #1D05FC;
+}
+#rcorners4{
+    background: red none repeat scroll 0 0;
+    border-radius: 15px 50px 30px 5px;
+    height: 150px;
+    padding: 20px;
+    width: 200px;
+}
+#rcorners5{
+    background: red none repeat scroll 0 0;
+    border-radius: 15px 50px 30px;
+    height: 150px;
+    padding: 20px;
+    width: 200px;
+}
+#rcorners6{
+    background: red none repeat scroll 0 0;
+    border-radius: 15px 50px;
+    height: 150px;
+    padding: 20px;
+    width: 200px;
+}
+/*CSS3 Border Images*/
+.border_image_top{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent;
+    border-image: url(image_path("icon/border.png")) 30 30 30 30 round round;
+    border-style: solid;
+    border-width: 10px;
+    padding: 15px;
+}
+.border_image_top span{
+    color: #1D05FC;
+}
+.image_boder img{
+    width: 81px;
+    height: 81px;
+}
+#border_image {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent;
+    border-image: url(image_path("icon/border.png")) 30 30 30 30 round round;
+    border-style: solid;
+    border-width: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+#border_image2 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent;
+    border-image: url(image_path("icon/border.png")) 30 30 30 30;
+    border-style: solid;
+    border-width: 10px;
+    padding: 15px;
+    text-align: center;
+}
+#border_image3 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent;
+    border-image: url(image_path("icon/border.png")) 50 50 50 50 round round;
+    border-style: solid;
+    border-width: 10px;
+    padding: 15px;
+    text-align: center;
+}
+#border_image4 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent;
+    border-image: url(image_path("icon/border.png")) 20% 20% 20% 20% round round;
+    border-style: solid;
+    border-width: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+#border_image5 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent;
+    border-image: url(image_path("icon/border.png")) 30% 30% 30% 30% round round;
+    border-style: solid;
+    border-width: 10px;
+    padding: 15px;
+    text-align: center;
+}
+/*CSS3 Backgrounds*/
+
+#example1 {
+    background: url(image_path("icon/img_flwr.gif")) no-repeat scroll right bottom, rgba(0, 0, 0, 0) url(image_path("icon/paper.gif")) repeat scroll left top;
+    padding: 15px;
+}
+
+.div1 {
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+#example2 {
+    background: url(image_path("icon/img_flwr.gif")) no-repeat scroll 0 0;
+    margin: 15px;
+    padding: 15px;
+}
+#example3 {
+    background: url(image_path("icon/img_flwr.gif")) no-repeat scroll 0 0 / 100px 80px;
+    margin: 15px;
+    padding: 15px;
+}
+/*CSS3 Colors*/
+
+.highELE{
+    color: brown;
+}
+.highATT {
+    color: red;
+}
+.highVAL {
+    color: mediumblue;
+}
+/*CSS3 3D Transforms*/
+#rotate2D, #rotate3D {
+    background: red none repeat scroll 0 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: white;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    width: 80px;
+}
+.rotatex{
+    width: 104px !important;
+    height: 79px !important;
+}
+.highCOM {
+    color: green;
 }
