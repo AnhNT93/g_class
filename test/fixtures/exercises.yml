@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question: MyString
+  guest: MyString
+  incorrect: MyText
+  correct: MyText
+
+two:
+  question: MyString
+  guest: MyString
+  incorrect: MyText
+  correct: MyText
