@@ -1,0 +1,360 @@
+<h4>CSS3 Rounded Corners</h4>
+<%= link_to "« Previous", root_path, class: "a_left"%>
+<%= link_to "Next Chapter »", static_pages_border_images_path, class: "a_right"%>
+
+<br>
+<div class="br-title"> </div>
+<br>
+<div class="rounded_corners">
+  <h2>
+    CSS3 Rounded Corners
+  </h2>
+  <p>
+    With the CSS3 <span>border-radius</span> property, you can give any element "rounded corners".
+  </p>
+</div>
+<br>
+<div class="br-title"></div>
+<h4>Browser Support</h4>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<p>Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+  <table class="table table-bordered browserref ">
+    <tr>
+      <td class="property">
+        <span>Property</span>
+      </td>
+      <td class="bsChrome">
+      </td>
+      <td class="bsEdge">
+      </td>
+      <td class="bsSafari">
+      </td>
+      <td class="bsIE">
+      </td>
+      <td class="bsOpera">
+      </td>
+      <td class="bsFirefox">
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>border-radius</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>5.0 4.0 -webkit-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0 </span>
+      </td>
+      <td class="w3-reference-color">
+        <span>5.0 3.1 -webkit-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>9.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>10.5</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0 3.0 -webkit-</span>
+      </td>
+    </tr>
+  </table>
+</div>
+<h4>CSS3 border-radius Property</h4>
+<p>With CSS3, you can give any element "rounded corners", by using the border-radius property.</p>
+<p>Here are three examples:</p>
+<p>1. Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>2. Rounded corners for an element with a border:</p>
+<p id="rcorners2">Rounded corners!</p>
+<p>3. Rounded corners for an element with a background image:</p>
+<p id="rcorners3">Rounded corners!</p>
+<p>Here is the code:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#rcorners1 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 25px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#rcorners2 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 25px;</span>
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 2px solid #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#rcorners3 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 25px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> url(paper.gif);</span>
+    <br>
+    <span class="highATT">background-position:</span>
+    <span class="highVAL"> left top;</span>
+    <br>
+    <span class="highATT">background-repeat:</span>
+    <span class="highVAL"> repeat;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+  </div>
+  <a class="w3-btn w3-margin-bottom" href="#" >Try it yourself »</a>
+</div>
+<div>
+  <table class="lamp table table-bordered">
+    <tr>
+      <td class="lamp_td">
+        <%= image_tag("icon/lamp.jpg")%>
+      </td>
+      <td>
+        <p> 	Tip: The <span>border-radius</span> property is actually a shorthand property for the <span>border-top-left-radius, border-top-right-radius, border-bottom-right-radius</span> and <span>border-bottom-left-radius</span> properties.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+<h4>CSS3 border-radius - Specify Each Corner</h4>
+<p>If you specify only one value for the border-radius property, this radius will be applied to all 4 corners.</p>
+<p>However, you can specify each corner separately if you wish. Here are the rules:</p>
+<ul>
+  <li>Four values: first value applies to top-left, second value applies to top-right, third value applies to bottom-right, and fourth value applies to bottom-left corner</li>
+  <li>Three values: first value applies to top-left, second value applies to top-right and bottom-left, and third value applies to bottom-right</li>
+  <li>Two values: first value applies to top-left and bottom-right corner, and the second value applies to top-right and bottom-left corner</li>
+  <li>One value: all four corners are rounded equally</li>
+</ul>
+<p>Here are three examples:</p>
+<p>1. Four values - border-radius: 15px 50px 30px 5px:</p>
+<p id="rcorners4"></p>
+<p>2. Three values - border-radius: 15px 50px 30px:</p>
+<p id="rcorners5"></p>
+<p>3. Two values - border-radius: 15px 50px:</p>
+<p id="rcorners6"></p>
+<p>Here is the code:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#rcorners4 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 15px 50px 30px 5px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#rcorners5 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 15px 50px 30px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#rcorners6 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 15px 50px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+  </div>
+  <a class="w3-btn w3-margin-bottom" href="#" target="_blank">Try it yourself »</a>
+</div>
+<p>You could also create elliptical corners:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#rcorners7 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 50px/15px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#rcorners8 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 15px/50px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#rcorners9 </span>
+    {
+    <br>
+    <span class="highATT">border-radius:</span>
+    <span class="highVAL"> 50%;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> #73AD21;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 20px;</span>
+    <br>
+    <span class="highATT">width:</span>
+    <span class="highVAL"> 200px;</span>
+    <br>
+    <span class="highATT">height:</span>
+    <span class="highVAL"> 150px;</span>
+    <br>
+    }
+  </div>
+  <a class="w3-btn w3-margin-bottom" href="#" target="_blank">Try it yourself »</a>
+</div>
+<div class="br-title"></div>
+<h4>Test Yourself with Exercises!</h4>
+<a class="w3-btn w3-margin-bottom" href="#">Exercise 1 »</a>
+<a class="w3-btn w3-margin-bottom" href="#">Exercise 2 »</a>
+<br>
+<div class="br-title"></div>
+<h4>CSS3 Rounded Corners Properties</h4>
+<table class="table table-striped ">
+  <tbody>
+    <tr>
+      <th style="width:30%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>
+        <a href="#">border-radius</a>
+      </td>
+      <td>A shorthand property for setting all the four border-*-*-radius properties</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#"> border-top-left-radius</a>
+      </td>
+      <td>Defines the shape of the border of the top-left corner</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#"> border-top-right-radius</a>
+      </td>
+      <td>Defines the shape of the border of the top-right corner</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#"> border-bottom-right-radius</a>
+      </td>
+      <td>Defines the shape of the border of the bottom-right corner</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#"> border-bottom-left-radius</a>
+      </td>
+      <td>Defines the shape of the border of the bottom-left corner</td>
+    </tr>
+  </tbody>
+</table>
+<div class="br-title"></div>
+<%= link_to "« Previous", root_path, class: "a_left"%> 
+<%= link_to "Next Chapter »", static_pages_border_images_path, class: "a_right"%>
+</div>

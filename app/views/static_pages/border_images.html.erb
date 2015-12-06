@@ -1,0 +1,256 @@
+<h4>CSS3 Border Images</h4>
+<%= link_to "« Previous", static_pages_rounded_corners_path, class: "a_left"%>
+<%= link_to "Next Chapter »", static_pages_backgrounds_path, class: "a_right"%>
+<br>
+<div class="br-title"> </div>
+<br>
+<div class="border_image_top">
+  <h2>
+    CSS3 Border Images
+  </h2>
+  <p>
+    With the CSS3 <span>border-image</span> property, you can set an image to be used as the border around an element.
+  </p>
+</div>
+<br>
+<div class="br-title"></div>
+<h4>Browser Support</h4>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<p>Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+  <table class="table table-bordered browserref ">
+    <tr>
+      <td class="property">
+        <span>Property</span>
+      </td>
+      <td class="bsChrome">
+      </td>
+      <td class="bsEdge">
+      </td>
+      <td class="bsSafari">
+      </td>
+      <td class="bsIE">
+      </td>
+      <td class="bsOpera">
+      </td>
+      <td class="bsFirefox">
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>border-radius</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>16.0-webkit-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0 </span>
+      </td>
+      <td class="w3-reference-color">
+        <span>6.0 3.1 -webkit-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>11.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>15.0 11.0 -o-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>15.0 3.5 -moz-</span>
+      </td>
+    </tr>
+  </table>
+</div>
+<h4>CSS3 border-image Property</h4>
+<p>The CSS3 border-image property allows you to specify an image to be used instead of the normal border around an element.</p>
+<p>The property has three parts:</p>
+<p>1. The image to use as the border</p>
+<p>2. Where to slice the image</p>
+<p>3. Define whether the middle sections should be repeated or stretched</p>
+<p>We will use the following image (called "border.png"):</p>
+<p class="image_boder"><%= image_tag("icon/border.png")%></p>
+<p>
+  The
+  <code>border-image</code>
+  property takes the image and slices it into nine sections, like a tic-tac-toe board. It then places the corners at the corners, and the middle sections are repeated or stretched as you specify.
+</p>
+<p>
+  <strong>Note:</strong>
+  For
+  <code>border-image</code>
+  to work, the element also needs the
+  <code>border</code>
+  property set!
+</p>
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="border_image">An image as a border!</p>
+<p>Here is the code:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#borderimg </span>
+    {
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 10px solid transparent;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 15px;</span>
+    <br>
+    <span class="highATT">-webkit-border-image:</span>
+    <span class="highVAL"> url(border.png) 30 round;</span>
+    <span class="highCOM">/* Safari 3.1-5 */</span>
+    <br>
+    <span class="highATT">-o-border-image:</span>
+    <span class="highVAL"> url(border.png) 30 round;</span>
+    <span class="highCOM">/* Opera 11-12.1 */</span>
+    <br>
+    <span class="highATT">border-image:</span>
+    <span class="highVAL"> url(border.png) 30 round;</span>
+    <br>
+    }
+  </div>
+  <a class="w3-btn w3-margin-bottom" href="#" >Try it yourself »</a>
+</div>
+<p>Here, the middle sections of the image are stretched to create the border:</p>
+<p id="border_image2">An image as a border!</p>
+<p>Here is the code:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#borderimg </span>
+    {
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 10px solid transparent;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 15px;</span>
+    <br>
+    <span class="highATT">-webkit-border-image:</span>
+    <span class="highVAL"> url(border.png) 30 stretch;</span>
+    <span class="highCOM">/* Safari 3.1-5 */</span>
+    <br>
+    <span class="highATT">-o-border-image:</span>
+    <span class="highVAL"> url(border.png) 30 stretch;</span>
+    <span class="highCOM">/* Opera 11-12.1 */</span>
+    <br>
+    <span class="highATT">border-image:</span>
+    <span class="highVAL"> url(border.png) 30 stretch;</span>
+    <br>
+    }
+  </div>
+  <a class="w3-btn w3-margin-bottom" href="#" >Try it yourself »</a>
+</div>
+<div>
+  <table class="lamp table table-bordered">
+    <tr>
+      <td class="lamp_td">
+        <%= image_tag("icon/lamp.jpg")%>
+      </td>
+      <td>
+        <b>Tip:</b>
+        The
+        <code>border-image</code>
+        property is actually a shorthand property for the
+        <code>border-image-source</code>
+        ,
+        <code>border-image-slice</code>
+        ,
+        <code>border-image-width</code>
+        ,
+        <code>border-image-outset</code>
+        and
+        <code>border-image-repeat</code>
+        properties.
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="br-title"></div>
+<h4>CSS3 border-image - Different Slice Values</h4>
+<p>Different slice values completely changes the look of the border:</p>
+<p>Example 1:</p>
+<p id="border_image3">border-image: url(border.png) 50 round;</p>
+<p>Example 2:</p>
+<p id="border_image4">border-image: url(border.png) 20% round;</p>
+<p>Example 3:</p>
+<p id="border_image5">border-image: url(border.png) 30% round;</p>
+<p>Here is the code:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#borderimg1 </span>
+    {
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 10px solid transparent;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 15px;</span>
+    <br>
+    <span class="highATT">-webkit-border-image:</span>
+    <span class="highVAL"> url(border.png) 50 round;</span>
+    <span class="highCOM">/* Safari 3.1-5 */</span>
+    <br>
+    <span class="highATT">-o-border-image:</span>
+    <span class="highVAL"> url(border.png) 50 round;</span>
+    <span class="highCOM">/* Opera 11-12.1 */</span>
+    <br>
+    <span class="highATT">border-image:</span>
+    <span class="highVAL"> url(border.png) 50 round;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#borderimg2 </span>
+    {
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 10px solid transparent;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 15px;</span>
+    <br>
+    <span class="highATT">-webkit-border-image:</span>
+    <span class="highVAL"> url(border.png) 20% round;</span>
+    <span class="highCOM">/* Safari 3.1-5 */</span>
+    <br>
+    <span class="highATT">-o-border-image:</span>
+    <span class="highVAL"> url(border.png) 20% round;</span>
+    <span class="highCOM">/* Opera 11-12.1 */</span>
+    <br>
+    <span class="highATT">border-image:</span>
+    <span class="highVAL"> url(border.png) 20% round;</span>
+    <br>
+    }
+    <br>
+    <br>
+    <span class="highELE">#borderimg3 </span>
+    {
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 10px solid transparent;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL"> 15px;</span>
+    <br>
+    <span class="highATT">-webkit-border-image:</span>
+    <span class="highVAL"> url(border.png) 30% round;</span>
+    <span class="highCOM">/* Safari 3.1-5 */</span>
+    <br>
+    <span class="highATT">-o-border-image:</span>
+    <span class="highVAL"> url(border.png) 30% round;</span>
+    <span class="highCOM">/* Opera 11-12.1 */</span>
+    <br>
+    <span class="highATT">border-image:</span>
+    <span class="highVAL"> url(border.png) 30% round;</span>
+    <br>
+    }
+  </div>
+  <a class="w3-btn w3-margin-bottom" href="#" >Try it yourself »</a>
+</div>
+<div class="br-title"></div>
+<%= link_to "« Previous", static_pages_rounded_corners_path, class: "a_left"%>
+<%= link_to "Next Chapter »", static_pages_backgrounds_path, class: "a_right"%>
+</div>

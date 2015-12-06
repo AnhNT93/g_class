@@ -1,0 +1,638 @@
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - confirmation_token
+  - confirmed_at
+  - confirmation_sent_at
+  - unconfirmed_email
+  - created_at
+  - updated_at
+  - name
+  - gender
+  - age
+  records: 
+  - - 1
+    - example@railstutorial.org
+    - "$2a$10$bJH3DBil17atSxCMTZpDteowOjCBinZGYJOmAugfdUkPXL.Sy4sH2"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - w5MsedAqrPHsKBvkasZd
+    - 
+    - '2015-11-07 04:13:17.797764'
+    - 
+    - '2015-11-07 04:13:17.565722'
+    - '2015-11-07 04:13:17.565722'
+    - Example User
+    - Male
+    - 26
+  - - 2
+    - example@mail.com
+    - "$2a$10$Vk.0Al.E9Div3oNHBf95MevlZi08zSMjXW9NAFc04yzg85swBJuFi"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - "-aZx2xXsXz1HAC5iJNxS"
+    - 
+    - '2015-11-07 04:13:19.915306'
+    - 
+    - '2015-11-07 04:13:19.914210'
+    - '2015-11-07 04:13:19.914210'
+    - Demo User
+    - Male
+    - 26
+  - - 3
+    - mail-1@railstutorial.org
+    - "$2a$10$AB12Yp3pScOAdv/iIzydYecwrs7mEiupSV2JbWbqx/zz9HphRmrHy"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - NfvLa6nhRJ2tx3D_LhSz
+    - 
+    - '2015-11-07 04:13:20.853929'
+    - 
+    - '2015-11-07 04:13:20.853001'
+    - '2015-11-07 04:13:20.853001'
+    - Savanna Jerde
+    - Male
+    - 26
+  - - 4
+    - mail-2@railstutorial.org
+    - "$2a$10$RAoHZOSyWoiynvfRdBWa7esMSad4/K3f6YxrnHhUc.AwY9dJ0FOLO"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - V9xJyVaRrSZ_pvZ4fRyA
+    - 
+    - '2015-11-07 04:13:21.814701'
+    - 
+    - '2015-11-07 04:13:21.813806'
+    - '2015-11-07 04:13:21.813806'
+    - Esmeralda Bins
+    - Male
+    - 26
+  - - 5
+    - mail-3@railstutorial.org
+    - "$2a$10$GIJPzKklhLO596rYLcZcqeIZ6nIJ.pfu8G7qqy3cRJIkDXX8Yuj6y"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - Ey-uP9npCYe2GzzzxHAB
+    - 
+    - '2015-11-07 04:13:22.759813'
+    - 
+    - '2015-11-07 04:13:22.758763'
+    - '2015-11-07 04:13:22.758763'
+    - Jon Murray PhD
+    - Male
+    - 26
+  - - 6
+    - mail-4@railstutorial.org
+    - "$2a$10$MXBkBn8tjx/l100W/WEbA.eplZuSMpV2GDUNdH40yhj1oumQfDqE6"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 2WThRdsAvmS8g7wYHd9q
+    - 
+    - '2015-11-07 04:13:23.675662'
+    - 
+    - '2015-11-07 04:13:23.674602'
+    - '2015-11-07 04:13:23.674602'
+    - Ms. Brayan Morar
+    - Male
+    - 26
+  - - 7
+    - mail-5@railstutorial.org
+    - "$2a$10$68xElbZ8qYIrT23zYnQJluR6tHw9rIn9TRMUa6FmhK0zuIMHQHcU6"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - ZbWNtNMyi_f8UFJvEN8f
+    - 
+    - '2015-11-07 04:13:24.614623'
+    - 
+    - '2015-11-07 04:13:24.613275'
+    - '2015-11-07 04:13:24.613275'
+    - Tevin Volkman
+    - Male
+    - 26
+  - - 8
+    - mail-6@railstutorial.org
+    - "$2a$10$WNmWUFbASOAyxmw7l.wDvuzJI.a.tmCXg/1Q69yLf1DPtrlgw0sge"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - g-1KwFXomcFLthLjCPLT
+    - 
+    - '2015-11-07 04:13:25.542851'
+    - 
+    - '2015-11-07 04:13:25.541953'
+    - '2015-11-07 04:13:25.541953'
+    - Johnpaul Beahan
+    - Male
+    - 26
+  - - 9
+    - mail-7@railstutorial.org
+    - "$2a$10$ErlSbAXq8D2hctZEEavhzOUyz3yuQba3VaIeYHl/OOVTq0RBSHxHG"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - bRsVmd9rKyNArVQHxWuQ
+    - 
+    - '2015-11-07 04:13:26.482016'
+    - 
+    - '2015-11-07 04:13:26.481099'
+    - '2015-11-07 04:13:26.481099'
+    - Titus Hessel
+    - Male
+    - 26
+  - - 10
+    - mail-8@railstutorial.org
+    - "$2a$10$YKRcC.kLzJDJpoMQv8T/TOuB7rqSqg.YBAKWjD/TnCcXg844yTDau"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - HbCksAEixZhhwohyVxMT
+    - 
+    - '2015-11-07 04:13:27.420314'
+    - 
+    - '2015-11-07 04:13:27.419231'
+    - '2015-11-07 04:13:27.419231'
+    - Sterling Huel DDS
+    - Male
+    - 26
+  - - 11
+    - mail-9@railstutorial.org
+    - "$2a$10$FVbxNHytxccTcghyq0Dz0ubRHniw4t6q5Zb/BuT4wv26kgSZtvSlC"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - sii2cB3yS-8zM4eCzhsp
+    - 
+    - '2015-11-07 04:13:28.388777'
+    - 
+    - '2015-11-07 04:13:28.387727'
+    - '2015-11-07 04:13:28.387727'
+    - Miss Barry Terry
+    - Male
+    - 26
+  - - 12
+    - mail-10@railstutorial.org
+    - "$2a$10$G5ytt.ZxqI5ge47PAqM1LORpGKeTfcU/ud3ULNQ/O07AEij5OV9Hy"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - aTC6yeYiE7KtsDiTsC78
+    - 
+    - '2015-11-07 04:13:29.360767'
+    - 
+    - '2015-11-07 04:13:29.359702'
+    - '2015-11-07 04:13:29.359702'
+    - Dr. Lizeth Cummings
+    - Male
+    - 26
+  - - 13
+    - mail-11@railstutorial.org
+    - "$2a$10$VXoiD01E/56NAtv5BU4DoOFOTYtBXSzKSHVDmR4I3/rt0yqble85i"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - KoCLdHEaqvA9vj19nufD
+    - 
+    - '2015-11-07 04:13:30.299701'
+    - 
+    - '2015-11-07 04:13:30.297753'
+    - '2015-11-07 04:13:30.297753'
+    - Hector Sauer
+    - Male
+    - 26
+  - - 14
+    - mail-12@railstutorial.org
+    - "$2a$10$B5JzwUnrU9WQPMvjT.L9b.W6TTVeO78eKc6TQUJ2RUhuxlEHIU3eO"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - JnygLGDDMuBQFLtsjudN
+    - 
+    - '2015-11-07 04:13:31.247901'
+    - 
+    - '2015-11-07 04:13:31.246285'
+    - '2015-11-07 04:13:31.246285'
+    - Marion Turner
+    - Male
+    - 26
+  - - 15
+    - mail-13@railstutorial.org
+    - "$2a$10$cI.nsOns0TZfD7mV4Wr6UeQcIvPZ1kwYa5czKNcoByXstVcF6aFDK"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - DyJRzL3GUax8BxrPurvd
+    - 
+    - '2015-11-07 04:13:32.210835'
+    - 
+    - '2015-11-07 04:13:32.209847'
+    - '2015-11-07 04:13:32.209847'
+    - Elliott Emmerich
+    - Male
+    - 26
+  - - 16
+    - mail-14@railstutorial.org
+    - "$2a$10$5Wd6dmSMNormObMOi3PrwunZ2ES1FZ4U4oY1FOjZZ3GqtxcN4.m3a"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - x9nUgDjfNnEoGw7om-S7
+    - 
+    - '2015-11-07 04:13:33.134443'
+    - 
+    - '2015-11-07 04:13:33.133412'
+    - '2015-11-07 04:13:33.133412'
+    - Trace Nienow IV
+    - Male
+    - 26
+  - - 17
+    - mail-15@railstutorial.org
+    - "$2a$10$l2GaNj/.EL94drX9kw8q2.kNTEc4MrBurib0/ZE0MeZKNmKqLdhQm"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - JzoZytiCMPxEEdBxxxQQ
+    - 
+    - '2015-11-07 04:13:34.086388'
+    - 
+    - '2015-11-07 04:13:34.085362'
+    - '2015-11-07 04:13:34.085362'
+    - Arch Carroll
+    - Male
+    - 26
+  - - 18
+    - mail-16@railstutorial.org
+    - "$2a$10$0MTvUM/E.1.GjSDPwU2tAOfi28bJbfJ2NC4pMQ5Sx57wsCqdNz7eu"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - 8z_1o_sW4pSFsAfYR3p2
+    - 
+    - '2015-11-07 04:13:35.038201'
+    - 
+    - '2015-11-07 04:13:35.036546'
+    - '2015-11-07 04:13:35.036546'
+    - Garnett Hermann
+    - Male
+    - 26
+  - - 19
+    - mail-17@railstutorial.org
+    - "$2a$10$hlOZSVinaqw.C3.u9R83A.PQhImAa7cFS29tD6LgU9HcyDAEzBkeO"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - QYQY4YVRcysVbsCr3FsH
+    - 
+    - '2015-11-07 04:13:36.000853'
+    - 
+    - '2015-11-07 04:13:35.999348'
+    - '2015-11-07 04:13:35.999348'
+    - Kory Ondricka
+    - Male
+    - 26
+  - - 20
+    - mail-18@railstutorial.org
+    - "$2a$10$DcWwAYLanosx/qpDliqof.UB6uQx68tYYiprvTLlNbOns1hcfJKhO"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - PJqqrovJvXXimzyJH8n5
+    - 
+    - '2015-11-07 04:13:36.964644'
+    - 
+    - '2015-11-07 04:13:36.963475'
+    - '2015-11-07 04:13:36.963475'
+    - Tyreek Hintz
+    - Male
+    - 26
+  - - 21
+    - mail-19@railstutorial.org
+    - "$2a$10$Gqb4NiKKHZAl2t249JGHmeu46aNHO8kllKEAPUbRHrwZ1PeKNvsFW"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - Nmx97zdDWbyBdPzzNxSM
+    - 
+    - '2015-11-07 04:13:37.913316'
+    - 
+    - '2015-11-07 04:13:37.912161'
+    - '2015-11-07 04:13:37.912161'
+    - Clair Graham
+    - Male
+    - 26
+  - - 22
+    - mail-20@railstutorial.org
+    - "$2a$10$mZcxr8cOzn1k1dz/xL/PBuLRUcnTcyPQFmV2S5HgFUv.Je.jgqH9m"
+    - 
+    - 
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 
+    - ExAhQVHn_DHbCr1KQx-r
+    - 
+    - '2015-11-07 04:13:38.877876'
+    - 
+    - '2015-11-07 04:13:38.876378'
+    - '2015-11-07 04:13:38.876378'
+    - Wilber O'Keefe DDS
+    - Male
+    - 26
+  - - 23
+    - touanain@gmail.com
+    - "$2a$10$cZQUY.iu3GXlpFMA6AjlA.Ncb.6oTIPn5OaHSUmHf6CtJWfGIrB3C"
+    - 
+    - 
+    - 
+    - 3
+    - '2015-11-21 03:19:55.008852'
+    - '2015-11-21 03:00:48.668089'
+    - 123.24.122.121
+    - 118.71.217.7
+    - HZ2tM3z9yWQc4a9zThG4
+    - '2015-11-07 04:17:34.323602'
+    - '2015-11-07 04:16:57.503862'
+    - 
+    - '2015-11-07 04:16:57.246872'
+    - '2015-11-21 03:19:55.011262'
+    - anh
+    - Male
+    - 25
+
+---
+user_logs:
+  columns:
+  - id
+  - user_id
+  - log_data
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 23
+    - create slide
+    - '2015-11-21 03:34:22.494048'
+    - '2015-11-21 03:34:22.494048'
+
+---
+goals:
+  columns:
+  - id
+  - user_id
+  - content
+  - deadline
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 23
+    - html
+    - '2015-12-05 07:59:00.000000'
+    - '2015-12-05 07:38:25.009006'
+    - '2015-12-05 07:38:25.009006'
+
+---
+friends:
+  columns:
+  - id
+  - user_id
+  - friend_id
+  - accepted
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 23
+    - 1
+    - false
+    - '2015-11-07 04:17:55.638051'
+    - '2015-11-07 04:17:55.638051'
+
+---
+code_examples:
+  columns:
+  - id
+  - name
+  - content
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - CSS3 border-radius Property
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#rcorners1 {\r\n    border-radius:
+      25px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width: 200px;\r\n
+      \   height: 150px;    \r\n}\r\n\r\n#rcorners2 {\r\n    border-radius: 25px;\r\n
+      \   border: 2px solid #73AD21;\r\n    padding: 20px; \r\n    width: 200px;\r\n
+      \   height: 150px;    \r\n}\r\n\r\n#rcorners3 {\r\n    border-radius: 25px;\r\n
+      \   background: url(paper.gif);\r\n    background-position: left top;\r\n    background-repeat:
+      repeat;\r\n    padding: 20px; \r\n    width: 200px;\r\n    height: 150px;    \r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>The
+      border-radius property allows you to add rounded corners to elements.</p>\r\n<p>Rounded
+      corners for an element with a specified background color:</p>\r\n<p id=\"rcorners1\">Rounded
+      corners!</p>\r\n<p>Rounded corners for an element with a border:</p>\r\n<p id=\"rcorners2\">Rounded
+      corners!</p>\r\n<p>Rounded corners for an element with a background image:</p>\r\n<p
+      id=\"rcorners3\">Rounded corners!</p>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-05 15:16:20.074363'
+    - '2015-12-05 16:21:40.505908'
+  - - 2
+    - CSS3 border-radius - Specify Each Corner
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#rcorners4 {\r\n    border-radius:
+      15px 50px 30px 5px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width:
+      200px;\r\n    height: 150px; \r\n}\r\n\r\n#rcorners5 {\r\n    border-radius:
+      15px 50px 30px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width:
+      200px;\r\n    height: 150px; \r\n}\r\n\r\n#rcorners6 {\r\n    border-radius:
+      15px 50px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width:
+      200px;\r\n    height: 150px; \r\n} \r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>Four
+      values - border-radius: 15px 50px 30px 5px:</p>\r\n<p id=\"rcorners4\"></p>\r\n\r\n<p>Three
+      values - border-radius: 15px 50px 30px:</p>\r\n<p id=\"rcorners5\"></p>\r\n\r\n<p>Two
+      values - border-radius: 15px 50px:</p>\r\n<p id=\"rcorners6\"></p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-05 15:31:12.142689'
+    - '2015-12-05 16:25:36.058326'
+  - - 3
+    - CSS3 border-radius - Specify Each Corner 2
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#rcorners7 {\r\n    border-radius:
+      50px/15px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width:
+      200px;\r\n    height: 150px; \r\n}\r\n\r\n#rcorners8 {\r\n    border-radius:
+      15px/50px;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width:
+      200px;\r\n    height: 150px; \r\n}\r\n\r\n#rcorners9 {\r\n    border-radius:
+      50%;\r\n    background: #73AD21;\r\n    padding: 20px; \r\n    width: 200px;\r\n
+      \   height: 150px;\r\n} \r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>Elliptical
+      border - border-radius: 50px/15px:</p>\r\n<p id=\"rcorners7\"></p>\r\n\r\n<p>Elliptical
+      border - border-radius: 15px/50px:</p>\r\n<p id=\"rcorners8\"></p>\r\n\r\n<p>Ellipse
+      border - border-radius: 50%:</p>\r\n<p id=\"rcorners9\"></p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-05 15:33:14.102550'
+    - '2015-12-05 16:26:08.059450'
+  - - 4
+    - CSS3 border-image Property
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#borderimg { \r\n    border:
+      10px solid transparent;\r\n    padding: 15px;\r\n    -webkit-border-image: url('http://imgur.com/Lw8U58y.png')
+      30 round; /* Safari 3.1-5 */\r\n    -o-border-image: url('http://imgur.com/Lw8U58y.png')
+      30 round; /* Opera 11-12.1 */\r\n    border-image: url('http://imgur.com/Lw8U58y.png')
+      30 round;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>The border-image property
+      specifies an image to be used as the border around an element:</p>\r\n<p id=\"borderimg\">Here,
+      the middle sections of the image are repeated to create the border.</p>\r\n\r\n<p>Here
+      is the original image:</p><img src=\"http://imgur.com/Lw8U58y.png\">\r\n<p><strong>Note:</strong>
+      Internet Explorer 10, and earlier versions, do not support the border-image
+      property.</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-05 15:38:52.015177'
+    - '2015-12-05 16:32:36.068728'
+  - - 5
+    - CSS3 border-image Property 2
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style> \r\n#borderimg { \r\n    border:
+      10px solid transparent;\r\n    padding: 15px;\r\n    -webkit-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      30 stretch; /* Safari 3.1-5 */\r\n    -o-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      30 stretch; /* Opera 11-12.1 */\r\n    border-image: url('http://i.imgur.com/Lw8U58y.png')
+      30 stretch;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p>The border-image
+      property specifies an image to be used as the border around an element:</p>\r\n<p
+      id=\"borderimg\">Here, the middle sections of the image are stretched to create
+      the border.</p>\r\n\r\n<p>Here is the original image:</p><img src=\"http://i.imgur.com/Lw8U58y.png\">\r\n<p><strong>Note:</strong>
+      Internet Explorer 10, and earlier versions, do not support the border-image
+      property.</p>\r\n\r\n</body>\r\n</html>\r\n"
+    - '2015-12-05 15:40:43.177752'
+    - '2015-12-05 16:35:13.588184'
+  - - 6
+    - CSS3 border-image Property 3
+    - "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<style>\r\n#borderimg1 {\r\n    border:
+      10px solid transparent;\r\n    padding: 15px;\r\n    -webkit-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      50 round; /* Safari 3.1-5 */\r\n    -o-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      50 round; /* Opera 11-12.1 */\r\n    border-image: url('http://i.imgur.com/Lw8U58y.png')
+      50 round;\r\n}\r\n\r\n#borderimg2 {\r\n    border: 10px solid transparent;\r\n
+      \   padding: 15px;\r\n    -webkit-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      20% round; /* Safari 3.1-5 */\r\n    -o-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      20% round; /* Opera 11-12.1 */\r\n    border-image: url('http://i.imgur.com/Lw8U58y.png')
+      20% round;\r\n}\r\n\r\n#borderimg3 {\r\n    border: 10px solid transparent;\r\n
+      \   padding: 15px;\r\n    -webkit-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      30% round; /* Safari 3.1-5 */\r\n    -o-border-image: url('http://i.imgur.com/Lw8U58y.png')
+      30% round; /* Opera 11-12.1 */\r\n    border-image: url('http://i.imgur.com/Lw8U58y.png')
+      30% round;\r\n}\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<p id=\"borderimg1\">border-image:
+      url('http://i.imgur.com/Lw8U58y.png') 50 round;</p>\r\n<p id=\"borderimg2\">border-image:
+      url('http://i.imgur.com/Lw8U58y.png') 20% round;</p>\r\n<p id=\"borderimg3\">border-image:
+      url('http://i.imgur.com/Lw8U58y.png') 30% round;</p>\r\n\r\n<p><strong>Note:</strong>
+      Internet Explorer 10, and earlier versions, do not support the border-image
+      property.</p>\r\n\r\n</body>\r\n</html>"
+    - '2015-12-05 15:42:11.533581'
+    - '2015-12-05 16:36:51.488276'

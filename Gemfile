@@ -50,3 +50,4 @@ end
 gem 'devise'
 gem 'ckeditor_rails'
 gem 'jquery-turbolinks'
+gem 'yaml_db'
