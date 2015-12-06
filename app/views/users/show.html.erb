@@ -6,9 +6,9 @@
 <% if @is_me %>
 <% @user.friends.each_with_index do |friend, i| %>
 <% if friend.user_id == @user.id %>
-<h4> <%= "#{i+1}. #{User.find(friend.friend_id).name} - #{@user.status_with(friend.friend_id).to_s}" %></h4>
+<h3> <%= i+1 %>. <%= link_to User.find(friend.friend_id).name, User.find(friend.friend_id) %> - <%= @user.status_with(friend.friend_id).to_s  %></h3>
 <% else %>
-<h4> <%= "#{i+1}. #{User.find(friend.user_id).name} - #{@user.status_with(friend.user_id).to_s}" %></h4>
+<h3> <%= i+1 %>. <%= link_to User.find(friend.user_id).name, User.find(friend.user_id) %> - <%= @user.status_with(friend.user_id).to_s  %></h3>
 <%end%>
 <% end %>
 <% else %>
@@ -45,6 +45,7 @@
   <%= hidden_field_tag :friend_id, @user.id %>
   <%= submit_tag "Unfriend" %>
 <% end %> 
+
 <%end %>
 <% end %>
 
