@@ -1,0 +1,459 @@
+  <script>
+<!--
+var x,y,n=0,ny=0,rotINT,rotYINT
+function rotateDIV()
+{
+x=document.getElementById("rotate2D")
+clearInterval(rotINT)
+rotINT=setInterval("startRotate()",10)
+}
+function rotateYDIV()
+{
+y=document.getElementById("rotate3D")
+clearInterval(rotYINT)
+rotYINT=setInterval("startYRotate()",10)
+}
+function startRotate()
+{
+n=n+1
+x.style.transform="rotate(" + n + "deg)"
+x.style.webkitTransform="rotate(" + n + "deg)"
+x.style.OTransform="rotate(" + n + "deg)"
+x.style.MozTransform="rotate(" + n + "deg)"
+if (n==180 || n==360)
+	{
+	clearInterval(rotINT)
+	if (n==360){n=0}
+	}
+}
+function startYRotate()
+{
+ny=ny+1
+y.style.transform="rotateY(" + ny + "deg)"
+y.style.webkitTransform="rotateY(" + ny + "deg)"
+y.style.OTransform="rotateY(" + ny + "deg)"
+y.style.MozTransform="rotateY(" + ny + "deg)"
+if (ny==180 || ny>=360)
+	{
+	clearInterval(rotYINT)
+	if (ny>=360){ny=0}
+	}
+}
+//-->
+</script>
+
+  <h4>CSS3 3D Transforms</h4>
+  <%= link_to "« Previous", static_pages_transforms2d_path, class: "a_left"%>
+  <%= link_to "Next Chapter »", static_pages_transitions_path, class: "a_right"%>
+  <br>
+  <div class="br-title"> </div>
+  <br>
+  <h4>CSS3 3D Transforms</h4>
+  <p>CSS3 allows you to format your elements using 3D transformations.</p>
+  <p>Mouse over the elements below to see the difference between a 2D and a 3D transformation:</p>
+  <div style="height:80px;">
+    <div id="rotate2D" onmouseover="rotateDIV()" style="transform: rotate(360deg);">2D rotate</div>
+    <div id="rotate3D" onmouseover="rotateYDIV()" style="transform: rotateY(180deg);">3D rotate</div>
+  </div>
+  <br>
+  <div class="br-title"></div>
+  <h4>Browser Support for 3D Transforms</h4>
+  <p>The numbers in the table specify the first browser version that fully supports the property.</p>
+  <p>Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix.</p>
+  <div class="w3-responsive">
+    <table class="table table-bordered browserref ">
+      <tr>
+        <td class="property">
+          <span>Property</span>
+        </td>
+        <td class="bsChrome">
+        </td>
+        <td class="bsEdge">
+        </td>
+        <td class="bsSafari">
+        </td>
+        <td class="bsIE">
+        </td>
+        <td class="bsOpera">
+        </td>
+        <td class="bsFirefox">
+        </td>
+      </tr>
+      <tr>
+        <td class="w3-reference-color">
+          <span>transform</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>36.0 12.0 -webkit-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>12.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>10.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="w3-reference-color">
+          <span>transform-origin(three-value syntax)</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>36.0 12.0 -webkit-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>12.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>10.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="w3-reference-color">
+          <span>transform-style</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>36.0 12.0 -webkit-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>12.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>11.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="w3-reference-color">
+          <span>perspective</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>36.0 12.0 -webkit-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>12.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>10.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="w3-reference-color">
+          <span>perspective-origin</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>36.0 12.0 -webkit-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>12.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>10.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="w3-reference-color">
+          <span>backface-visibility</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>36.0 12.0 -webkit-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>12.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>10.0</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+        <td class="w3-reference-color">
+          <span>16.0 10.0 -moz-</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="br-title"></div>
+  <h4>CSS3 3D Transforms</h4>
+  <p>In this chapter you will learn about the following 3D transformation methods:</p>
+  <ul>
+    <li>
+      <code>rotateX()</code>
+    </li>
+    <li>
+      <code>rotateY()</code>
+    </li>
+    <li>
+      <code>rotateZ()</code>
+    </li>
+  </ul>
+  <div class="br-title"></div>
+  <h4>The rotateX() Method</h4>
+  <%= image_tag("icon/transform_rotatex.gif", class: "rotatex")%>
+  <p>
+    The
+    <code>rotateX()</code>
+    method rotates an element around its X-axis at a given degree:
+  </p>
+  <div class="w3-example">
+    <h3>CSS Example</h3>
+    <div class="w3-code notranslate cssHigh">
+      <span class="highELE">div </span>
+      {
+      <br>
+      <span class="highATT">-webkit-transform:</span>
+      <span class="highVAL"> rotateX(150deg);</span>
+      <span class="highCOM">/* Safari */</span>
+      <br>
+      <span class="highATT">transform:</span>
+      <span class="highVAL"> rotateX(150deg);</span>
+      <br>
+      }
+    </div>
+    <%= link_to "Try it yourself »", code_example_path('21'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+  </div>
+  <div class="br-title"></div>
+  <h4>The rotateY() Method</h4>
+  <%= image_tag("icon/transform_rotatey.gif", class: "rotatex")%>
+  <p>
+    The
+    <code>rotateY()</code>
+    method rotates an element around its Y-axis at a given degree:
+  </p>
+  <div class="w3-example">
+    <h3>CSS Example</h3>
+    <div class="w3-code notranslate cssHigh">
+      <span class="highELE">div </span>
+      {
+      <br>
+      <span class="highATT">-webkit-transform:</span>
+      <span class="highVAL"> rotateY(130deg);</span>
+      <span class="highCOM">/* Safari */</span>
+      <br>
+      <span class="highATT">transform:</span>
+      <span class="highVAL"> rotateY(130deg);</span>
+      <br>
+      }
+    </div>
+    <%= link_to "Try it yourself »", code_example_path('19'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+  </div>
+  <div class="br-title"></div>
+  <h4>The rotateZ() Method</h4>
+  <p>
+    The
+    <code>rotateZ()</code>
+    method rotates an element around its Z-axis at a given degree:
+  </p>
+  <div class="w3-example">
+    <h3>CSS Example</h3>
+    <div class="w3-code notranslate cssHigh">
+      <span class="highELE">div </span>
+      {
+      <br>
+      <span class="highATT">-webkit-transform:</span>
+      <span class="highVAL"> rotateZ(90deg);</span>
+      <span class="highCOM">/* Safari */</span>
+      <br>
+      <span class="highATT">transform:</span>
+      <span class="highVAL"> rotateZ(90deg);</span>
+      <br>
+      }
+    </div>
+    <%= link_to "Try it yourself »", code_example_path('20'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+  </div>
+  <div class="br-title"></div>
+  <h4>Test Yourself with Exercises!</h4>
+  <a class="w3-btn w3-margin-bottom" href="#" >Exercise 1 »</a>
+  <a class="w3-btn w3-margin-bottom" href="#" >Exercise 2 »</a>
+  <a class="w3-btn w3-margin-bottom" href="#" >Exercise 3 »</a>
+  <br>
+  <div class="br-title"></div>
+  <h4>CSS3 Transform Properties</h4>
+  <p>The following table lists all the 3D transform properties:</p>
+  <table class="table table-striped ">
+    <tbody>
+      <tr>
+        <th style="width:30%">Property</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">transform</a>
+        </td>
+        <td> Applies a 2D or 3D transformation to an element</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">transform-origin</a>
+        </td>
+        <td>Allows you to change the position on transformed elements</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">transform-style</a>
+        </td>
+        <td>Specifies how nested elements are rendered in 3D space</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#">perspective</a>
+        </td>
+        <td> 	Specifies the perspective on how 3D elements are viewed</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#"> perspective-origin</a>
+        </td>
+        <td> 	Specifies the bottom position of 3D elements</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#"> backface-visibility</a>
+        </td>
+        <td> Defines whether or not an element should be visible when not facing the screen</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <h4>3D Transform Methods</h4>
+  <table class="table table-striped ">
+    <tbody>
+      <tr>
+        <th style="width:30%">Function</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          matrix3d (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+        </td>
+        <td> Defines a 3D transformation, using a 4x4 matrix of 16 values</td>
+      </tr>
+      <tr>
+        <td>
+          translate3d(x,y,z)
+        </td>
+        <td>Defines a 3D translation</td>
+      </tr>
+      <tr>
+        <td>
+          translateX(x)
+        </td>
+        <td>Defines a 3D translation, using only the value for the X-axis</td>
+      </tr>
+      <tr>
+        <td>
+          translateY(y)
+        </td>
+        <td>Defines a 3D translation, using only the value for the Y-axis</td>
+      </tr>
+      <tr>
+        <td>
+          translateZ(z)
+        </td>
+        <td> 	Defines a 3D translation, using only the value for the Z-axis</td>
+      </tr>
+      <tr>
+        <td>
+          scale3d(x,y,z)
+        </td>
+        <td> Defines a 3D scale transformation</td>
+      </tr>
+      <tr>
+        <td>
+          scaleX(x)
+        </td>
+        <td>  Defines a 3D scale transformation by giving a value for the X-axis</td>
+      </tr>
+      <tr>
+        <td>
+          scaleY(y)
+        </td>
+        <td> Defines a 3D scale transformation by giving a value for the Y-axis</td>
+      </tr>
+      <tr>
+        <td>
+          scaleZ(z)
+        </td>
+        <td> Defines a 3D scale transformation by giving a value for the Z-axis</td>
+      </tr>
+      <tr>
+        <td>
+          rotate3d(x,y,z,angle)
+        </td>
+        <td>Defines a 3D rotation</td>
+      </tr>
+      <tr>
+        <td>
+          rotateX(angle)
+        </td>
+        <td>Defines a 3D rotation along the X-axis</td>
+      </tr>
+      <tr>
+        <td>
+          rotateY(angle)
+        </td>
+        <td>Defines a 3D rotation along the Y-axis</td>
+      </tr>
+      <tr>
+        <td>
+          rotateZ(angle)
+        </td>
+        <td>Defines a 3D rotation along the Z-axis</td>
+      </tr>
+      <tr>
+        <td>
+          perspective(n)
+        </td>
+        <td> 	Defines a perspective view for a 3D transformed element</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="br-title"></div>
+  <%= link_to "« Previous", static_pages_transforms2d_path, class: "a_left"%>
+  <%= link_to "Next Chapter »", static_pages_transitions_path, class: "a_right"%>

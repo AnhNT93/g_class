@@ -1,0 +1,472 @@
+<h4>CSS3 Backgrounds</h4>
+<%= link_to "« Previous", static_pages_border_images_path, class: "a_left"%>
+<%= link_to "Next Chapter »", static_pages_colors_path, class: "a_right"%>
+<br>
+<div class="br-title"> </div>
+<br>
+<div id="example1">
+  <h2>CSS3 Backgrounds</h2>
+  <p>CSS3 contains a few new background properties, which allow greater control of the background element.</p>
+  <p>In this chapter you will learn how to add multiple background images to one element.</p>
+  <p>You will also learn about the following new CSS3 properties:</p>
+  <ul>
+    <li>
+      <code>background-size</code>
+    </li>
+    <li>
+      <code>background-origin</code>
+    </li>
+    <li>
+      <code>background-clip</code>
+    </li>
+  </ul>
+</div>
+<br>
+<div class="br-title"></div>
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the property.</p>
+<p>Numbers followed by -webkit-, -moz-, or -o- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+  <table class="table table-bordered browserref ">
+    <tr>
+      <td class="property">
+        <span>Property</span>
+      </td>
+      <td class="bsChrome">
+      </td>
+      <td class="bsEdge">
+      </td>
+      <td class="bsSafari">
+      </td>
+      <td class="bsIE">
+      </td>
+      <td class="bsOpera">
+      </td>
+      <td class="bsFirefox">
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>background-image(with multiple backgrounds)</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.1</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>9.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>11.5</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.6</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>background-size</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0 1.0 -webkit-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.1 3.0 -webkit-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>9.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>10.5 10.0 -o-</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0 3.6 -moz-</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>background-origin</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>1.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>9.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>10.5</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="w3-reference-color">
+        <span>background-clip</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0 </span>
+      </td>
+      <td class="w3-reference-color">
+        <span>12.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>3.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>9.0</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>10.5</span>
+      </td>
+      <td class="w3-reference-color">
+        <span>4.0</span>
+      </td>
+    </tr>
+  </table>
+</div>
+<h4>CSS3 Multiple Backgrounds</h4>
+<p>
+  CSS3 allows you to add multiple background images for an element, through the
+  <code>background-image</code>
+  property.
+</p>
+<p>The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.</p>
+<p>The following example has two background images, the first image is a flower (aligned to the bottom and right) and the second image is a paper background (aligned to the top-left corner):</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#example1 </span>
+    {
+    <br>
+    <span class="highATT">background-image:</span>
+    <span class="highVAL"> url(img_flwr.gif), url(paper.gif);</span>
+    <br>
+    <span class="highATT">background-position:</span>
+    <span class="highVAL"> right bottom, left top;</span>
+    <br>
+    <span class="highATT">background-repeat:</span>
+    <span class="highVAL"> no-repeat, repeat;</span>
+    <br>
+    }
+  </div>
+    <%= link_to "Try it yourself »", code_example_path('7'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+
+</div>
+<p>
+  Multiple background images can be specified using either the individual background properties (as above) or the
+  <code>background</code>
+  shorthand property.
+</p>
+<p>
+  The following example uses the
+  <code>background</code>
+  shorthand property (same result as example above):
+</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#example1 </span>
+    {
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;</span>
+    <br>
+    }
+  </div>
+  <%= link_to "Try it yourself »", code_example_path('8'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<h4>CSS3 Background Size</h4>
+<p>
+<p>Before CSS3, the size of a background image was the actual size of the image. CSS3 allows us to re-use background images in different contexts.</p>
+<p>The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.</p>
+<p>The following example resizes a background image to much smaller than the original image (using pixels):</p>
+<p>Original background image:</p>
+<div class="div1">
+  <div id="example2">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+<div class="br-title"></div>
+<p>Resized background image:</p>
+<div class="div1">
+  <div id="example3">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+<p>Here is the code:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#div1 </span>
+    {
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> url(img_flower.jpg);</span>
+    <br>
+    <span class="highATT">background-size:</span>
+    <span class="highVAL"> 100px 80px;</span>
+    <br>
+    <span class="highATT">background-repeat:</span>
+    <span class="highVAL"> no-repeat;</span>
+    <br>
+    }
+  </div>
+  <%= link_to "Try it yourself »", code_example_path('9'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<p>
+  The two other possible values for
+  <code>background-size</code>
+  are
+  <code>contain</code>
+  and
+  <code>cover</code>
+  .
+</p>
+<p>
+  The
+  <code>contain</code>
+  keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area). As such, depending on the proportions of the background image and the background positioning area, there may be some areas of the background which are not covered by the background image.
+</p>
+<p>
+  The
+  <code>cover</code>
+  keyword scales the background image so that the content area is completely covered by the background image (both its width and height are equal to or exceed the content area). As such, some parts of the background image may not be visible in the background positioning area.
+</p>
+<p>
+  The following example illustrates the use of
+  <code>contain</code>
+  and
+  <code>cover</code>
+  :
+</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#div1 </span>
+    {
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> url(img_flower.jpg);</span>
+    <br>
+    <span class="highATT">background-size:</span>
+    <span class="highVAL"> contain;</span>
+    <br>
+    <span class="highATT">background-repeat:</span>
+    <span class="highVAL"> no-repeat;</span>
+    <br>
+    }
+    <br>
+    <span class="highELE">#div2 </span>
+    {
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> url(img_flower.jpg);</span>
+    <br>
+    <span class="highATT">background-size:</span>
+    <span class="highVAL"> cover;</span>
+    <br>
+    <span class="highATT">background-repeat:</span>
+    <span class="highVAL"> no-repeat;</span>
+    <br>
+    }
+  </div>
+  <%= link_to "Try it yourself »", code_example_path('10'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<h4>Define Sizes of Multiple Background Images</h4>
+<p>
+  The
+  <code>background-size</code>
+  property also accepts multiple values for background size (using a comma-separated list), when working with multiple backgrounds.
+</p>
+<p>The following example has three background images specified, with different background-size value for each image:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#example1 </span>
+    {
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> url(img_flwr.gif) left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;</span>
+    <br>
+    <span class="highATT">background-size:</span>
+    <span class="highVAL"> 50px, 130px, auto;</span>
+    <br>
+    }
+  </div>
+  <%= link_to "Try it yourself »", code_example_path('11'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<h4>Full Size Background Image</h4>
+<p>Now we want to have a background image on a website that covers the entire browser window at all times.</p>
+<p>The requirements are as follows:</p>
+<ul>
+  <li>Fill the entire page with the image (no white space)</li>
+  <li>Scale image as needed</li>
+  <li>Center image on page</li>
+  <li>Do not cause scrollbars</li>
+</ul>
+<p>The following example shows how to do it; Use the html element (the html element is always at least the height of the browser window). Then set a fixed and centered background on it. Then adjust its size with the background-size property:</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">html </span>
+    {
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> url(img_flower.jpg) no-repeat center center fixed;</span>
+    <br>
+    <span class="highATT">background-size:</span>
+    <span class="highVAL"> cover;</span>
+    <br>
+    }
+  </div>
+  <%= link_to "Try it yourself »", code_example_path('12'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<h4>CSS3 background-origin Property</h4>
+<p>
+  The CSS3
+  <code>background-origin</code>
+  property specifies where the background image is positioned.
+</p>
+<p>The property takes three different values:</p>
+<ul>
+  <li>border-box - the background image starts from the upper left corner of the border</li>
+  <li>padding-box - (default) the background image starts from the upper left corner of the padding edge</li>
+  <li>content-box - the background image starts from the upper left corner of the content</li>
+</ul>
+<p>
+  The following example illustrates the
+  <code>background-origin</code>
+  property:
+</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#example1 </span>
+    {
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 10px solid black;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL">35px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL">url(img_flwr.gif);</span>
+    <br>
+    <span class="highATT">background-repeat:</span>
+    <span class="highVAL"> no-repeat;</span>
+    <br>
+    <span class="highATT">background-origin:</span>
+    <span class="highVAL"> content-box;</span>
+    <br>
+    }
+  </div>
+  <%= link_to "Try it yourself »", code_example_path('13'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<h4>CSS3 background-clip Property</h4>
+<p>
+  The CSS3
+  <code>background-clip</code>
+  property specifies the painting area of the background.
+</p>
+<p>The property takes three different values:</p>
+<ul>
+  <li>border-box - (default) the background is painted to the outside edge of the border</li>
+  <li>padding-box - the background is painted to the outside edge of the padding</li>
+  <li>content-box - the background is painted within the content box</li>
+</ul>
+<p>
+  The following example illustrates the
+  <code>background-clip</code>
+  property:
+</p>
+<div class="w3-example">
+  <h3>CSS Example</h3>
+  <div class="w3-code notranslate cssHigh">
+    <span class="highELE">#example1 </span>
+    {
+    <br>
+    <span class="highATT">border:</span>
+    <span class="highVAL"> 10px dotted black;</span>
+    <br>
+    <span class="highATT">padding:</span>
+    <span class="highVAL">35px;</span>
+    <br>
+    <span class="highATT">background:</span>
+    <span class="highVAL"> yellow;</span>
+    <br>
+    <span class="highATT">background-clip:</span>
+    <span class="highVAL"> content-box;</span>
+    <br>
+    }
+  </div>
+  <%= link_to "Try it yourself »", code_example_path('14'),target: "_blank",class: "w3-btn w3-margin-bottom"%>
+</div>
+<h4>Test Yourself with Exercises!</h4>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 1 »</a>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 2 »</a>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 3 »</a>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 4 »</a>
+<a class="w3-btn w3-margin-bottom" href="#" >Exercise 5 »</a>
+<br>
+<h4>CSS3 Background Properties</h4>
+<table class="table table-striped ">
+  <tbody>
+    <tr>
+      <th style="width:30%">Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>
+        <a href="#">background</a>
+      </td>
+      <td>A shorthand property for setting all the background properties in one declaration</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#"> background-clip</a>
+      </td>
+      <td>Specifies the painting area of the background</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#"> background-image</a>
+      </td>
+      <td>Specifies one or more background images for an element</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#"> background-origin</a>
+      </td>
+      <td> 	Specifies where the background image(s) is/are positioned</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#">background-size</a>
+      </td>
+      <td>Specifies the size of the background image(s)</td>
+    </tr>
+  </tbody>
+</table>
+<div class="br-title"></div>
+<%= link_to "« Previous", static_pages_border_images_path, class: "a_left"%>
+<%= link_to "Next Chapter »", static_pages_colors_path, class: "a_right"%></div>
