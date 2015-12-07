@@ -1,0 +1,20 @@
+<div class="col-md-4">
+  <h3>Send A message to Us</h3>
+
+  <%= simple_form_for @contact  do |f| %>
+    <br></br>
+    <%= f.input :name,:label => false, :required => true,:placeholder => "Name",:input_html => {class:"form-control"} %>
+    <br>
+    <%= f.input :email,:label => false, :required => true,:placeholder => "Email",:input_html =>{class:"form-control"} %>
+    </br>
+    <%= f.text_area :message,cols: "50", rows: "10",:label => false,:placeholder => "Message", :required => true,:input_html =>{class:"form-control"} %>
+    <br>
+          <%= recaptcha_tags %>
+          <br></br>
+    <div>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+    <br>
+
+  <% end %>
+</div>
