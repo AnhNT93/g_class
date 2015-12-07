@@ -51,3 +51,6 @@ gem 'devise'
 gem 'ckeditor_rails'
 gem 'jquery-turbolinks'
 gem 'yaml_db'
+gem 'mail_form'
+gem 'simple_form'
+gem "recaptcha", require: "recaptcha/rails"
